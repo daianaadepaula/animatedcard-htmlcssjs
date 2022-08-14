@@ -16,6 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
+    overflow: hidden;
 }
 
 .card{
@@ -96,4 +97,19 @@ body{
     border: 2px solid #0088D2;
     background: #0088D2;
     color: #FFF;
+}
+
+#tenis-1, #tenis-2{
+    width: 450px;
+    position: absolute;
+    top: 190px;
+    transition: 1s;
+}
+
+#tenis-1{
+    left: -50px;
+}
+
+#tenis-2{
+    left: -650px;
 }
