@@ -6,10 +6,10 @@ const arrowLeft = document.getElementById('left');
 
 arrowLeft.addEventListener('click', () => {
     tenis1.style.left = '650px';
-    tenis2.style.left = '-50px';
+    tenis2.style.left = '4px';
 });
 
 arrowRight.addEventListener('click', () => {
-    tenis1.style.left = '-50px';
+    tenis1.style.left = '4px';
     tenis2.style.left = '-650px';
 });

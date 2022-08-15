@@ -21,7 +21,7 @@ body{
 
 .card{
     width: 350px;
-    height: 600px;
+    height: 700px;
     position: relative;
     background: #FFF;
     border-radius: 30px;
@@ -35,7 +35,7 @@ body{
 
 .card-top{
     width: 100%;
-    height: 60%;
+    height: 50%;
     background: #0088D2;
     border-radius: 30px;
     color: #FFF;
@@ -76,6 +76,7 @@ body{
 
 .card-bottom p{
     text-align: left;
+    margin: 3px 0;
 }
 
 .btn{
@@ -99,17 +100,67 @@ body{
     color: #FFF;
 }
 
+.btn:active{
+    opacity: 0.5;
+}
+
 #tenis-1, #tenis-2{
-    width: 450px;
+    width: 380px;
     position: absolute;
     top: 190px;
     transition: 1s;
+    transform: rotate(18deg);
 }
 
 #tenis-1{
-    left: -50px;
+    left: 4px;
 }
 
 #tenis-2{
     left: -650px;
+}
+
+.card-bottom .stars i{
+    margin: 0 -1px;
+    color: #0088D2;
+}
+
+.size-name{
+    margin-top: 5px;
+}
+
+.card-size .size-name .size-tilte{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.size-options{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    
+}
+
+.size{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;    
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.size:hover{
+    border: 1px solid #0088D2;
+    background: #0088D2;
+    color: #FFF;
+}
+
+.size-options .sizes.active{
+    box-shadow: 0 0 0 2px #FFF , 0 0 0 4px #000;
+    border: 1px solid #000;
+    background: #000;
+    color: #FFF;
 }
