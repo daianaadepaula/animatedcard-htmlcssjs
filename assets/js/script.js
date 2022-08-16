@@ -13,3 +13,15 @@ arrowRight.addEventListener('click', () => {
     tenis1.style.left = '4px';
     tenis2.style.left = '-650px';
 });
+
+
+
+let size = document.querySelector(".size-name");
+
+size.addEventListener("click", (event) => {
+    let target = event.target
+    if(target.classList.contains("size")){
+        size.querySelector(".active").classList.remove("active");
+        target.classList.add("active");
+    };
+});
